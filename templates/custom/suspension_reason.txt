@@ -1,0 +1,10 @@
+user_bandwidth=id=12&text=User Bandwidth
+user_quota=id=13&text=User Disk Quota
+domain_bandwidth=id=14&text=Domain Bandwidth
+domain_quota=id=15&text=Domain Quota
+reseller_bandwidth=id=16&text=Reseller Bandwidth
+reseller_quota=id=17&text=Reseller Quota
+billing=id=18&text=Billing Issue
+abuse=id=19&text=Abuse
+spam=id=20&text=Spam
+other=id=21&text=Other

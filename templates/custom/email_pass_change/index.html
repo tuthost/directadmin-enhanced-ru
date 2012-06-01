@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>
+		Change Email Password
+	</title>
+
+<style>
+	*{ FONT-SIZE: 8pt; FONT-FAMILY: verdana; }
+	b { FONT-WEIGHT: bold; }
+	.listtitle { BACKGROUND: #425984; COLOR: #EEEEEE; white-space: nowrap; }
+	td.list { BACKGROUND: #EEEEEE; white-space: nowrap; }
+</style>
+</head>
+<body>
+<center>
+<br><br><br>
+	<b>Change E-Mail Password</b>
+	<br><br>
+	<table cellpadding=5 cellspacing=1>
+		<form action="/CMD_CHANGE_EMAIL_PASSWORD" method="POST">
+		<tr><td class=listtitle colspan=2>Enter the required information below</td></tr>
+		<tr><td class=list align=right>Email Address:</td><td class=list><input type=text name=email size=32></td></tr>
+		<tr><td class=list align=right>Old Password:</td><td class=list><input type=password name=oldpassword size=32></td></tr>
+		<tr><td class=list align=right>New Password:</td><td class=list><input type=password name=password1 size=32></td></tr>
+		<tr><td class=list align=right>Re-Type Password:</td><td class=list><input type=password name=password2 size=32></td></tr>
+		<tr><td class=listtitle colspan=2 align=right><input type=submit value="Change Password"></td></tr>
+		</form>
+	</table>
+<br><br>
+
+</center>
+</body>
+
+</html>

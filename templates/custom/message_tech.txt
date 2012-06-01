@@ -1,0 +1,15 @@
+|?SUBJECT=New Ticket to resolve: `MESSAGE_SUBJECT`|
+A new ticket with subject:
+
+|MESSAGE_SUBJECT|
+
+has arrived for you to resolve.
+Follow this link to view it:
+
+|HTTP||DOMAIN|:|PORT|/CMD_TICKET_MANAGE?action=view&number=|NUMBER|&type=ticket
+
+
+======================================================
+Automatically generated email produced by DirectAdmin |VERSION|
+
+Do Not Reply.

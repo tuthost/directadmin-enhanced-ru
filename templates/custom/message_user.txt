@@ -1,0 +1,15 @@
+|?SUBJECT=New Message: `MESSAGE_SUBJECT`|
+A new message or response with subject:
+
+|MESSAGE_SUBJECT|
+
+has arrived for you to view.
+Follow this link to view it:
+
+|HTTP||DOMAIN|:|PORT|/CMD_TICKET?action=view&number=|NUMBER|&type=ticket
+
+
+======================================================
+Automatically generated email produced by DirectAdmin |VERSION|
+
+Do Not Reply.
