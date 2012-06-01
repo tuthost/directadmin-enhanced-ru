@@ -1,0 +1,36 @@
+|?FAILEDLOGIN=<h1>Wrong Username or Password!!</h1>|
+<html>
+<head>
+<title>Вход в DirectAdmin</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style>
+    *{ FONT-SIZE: 8pt; FONT-FAMILY: verdana; }
+    b { FONT-WEIGHT: bold; }
+    .listtitle { BACKGROUND: #425984; COLOR: #EEEEEE; white-space: nowrap; }
+    td.list { BACKGROUND: #EEEEEE; white-space: nowrap; }
+</style>
+</head>
+<body>
+|FAILEDLOGIN|
+<table cellspacing=1 cellpadding=5>
+<tr>
+    <td class=listtitle colspan=2>Пожалуйста введите ваш логин и пароль</td>
+</tr>
+<form action="/CMD_LOGIN" method="POST">
+<input type=hidden name=referer value="|REFERER|">
+<tr>
+    <td class=list align=right>Логин:</td><td class=list><input type=text name=username></td>
+</tr>
+<tr>
+    <td class=list align=right>Пароль:</td><td class=list><input type=password name=password></td>
+</tr>
+<tr>
+<td class=listtitle align=right colspan=2><input type=submit value="Login"></td>
+</tr>
+</form>
+</table>
+|*if LOST_PASSWORD="yes"|
+<a href="/CMD_LOST_PASSWORD">Забыли ваш пароль?</a>
+|*endif|
+</body>
+</html>
