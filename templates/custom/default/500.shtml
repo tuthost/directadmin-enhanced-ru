@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <HTML><HEAD>
-<TITLE>500 Internal Server Error</TITLE>
+<TITLE>500 Внутренняя ошибка сервера</TITLE>
 </HEAD><BODY>
-<H1>Internal Server Error</H1>
-The server encountered an internal error or misconfiguration and was unable to complete your request
+<H1>Внутренняя ошибка сервера</H1>
+На сервере произошла внутренняя ошибка или он не смог выполнить ваш запрос
 <HR>
 <I><!--#echo var="HTTP_HOST" --></I>
 </BODY></HTML>
