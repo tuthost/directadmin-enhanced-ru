@@ -1,15 +1,15 @@
-|?SUBJECT=New Ticket to resolve: `MESSAGE_SUBJECT`|
-A new ticket with subject:
+|?SUBJECT=Новый запрос: `MESSAGE_SUBJECT`|
+Новый запрос с темой:
 
 |MESSAGE_SUBJECT|
 
-has arrived for you to resolve.
-Follow this link to view it:
+поступил к вам.
+Кликните по ссылке, чтобы просмотреть его:
 
 |HTTP||DOMAIN|:|PORT|/CMD_TICKET_MANAGE?action=view&number=|NUMBER|&type=ticket
 
 
 ======================================================
-Automatically generated email produced by DirectAdmin |VERSION|
+Автоматичеки сгенерированный email через DirectAdmin |VERSION|
 
-Do Not Reply.
+Не отвечайте.
