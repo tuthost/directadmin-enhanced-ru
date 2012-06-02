@@ -1,15 +1,15 @@
-|?SUBJECT=New Message: `MESSAGE_SUBJECT`|
-A new message or response with subject:
+|?SUBJECT=Новое сообщение: `MESSAGE_SUBJECT`|
+Новое сообщение или ответ с темой:
 
 |MESSAGE_SUBJECT|
 
-has arrived for you to view.
-Follow this link to view it:
+поступил для вашего рассмотрения.
+Кликните по ссылке, чтобы просмотреть его:
 
 |HTTP||DOMAIN|:|PORT|/CMD_TICKET?action=view&number=|NUMBER|&type=ticket
 
 
 ======================================================
-Automatically generated email produced by DirectAdmin |VERSION|
+Автоматичеки сгенерированный email через DirectAdmin |VERSION|
 
-Do Not Reply.
+Не отвечайте.
