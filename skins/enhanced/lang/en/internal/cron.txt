@@ -12,3 +12,4 @@
 12=Delete
 13=Select
 14=User
+15=Invalid E-Mail address. DirectAdmin login username also allowed
