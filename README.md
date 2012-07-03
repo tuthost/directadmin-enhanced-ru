@@ -2,6 +2,7 @@ directadmin-enhanced-ru
 =======================
 
 Directadmin enhanced skin russian translations, made by TutHost.ua
+Перевод скина актуален для версии: Directadmin 1.41.1
 
 Полностью переведен скин enhanced. Перевод выполнен на 100% (более 2400 строк).
 
