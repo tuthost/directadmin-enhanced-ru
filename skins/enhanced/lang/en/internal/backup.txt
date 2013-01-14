@@ -63,7 +63,7 @@
 63=The file: '%s' is not in the form username.tar.gz
 64=You don't have permission to restore user
 65=User %s exists on the system but is not in your User list
-66=Unable to read the User data files for
+66=System account exists, but unable to read the User data files for
 67=User %s has been restored
 68=User %s was suspended in the backup.  Account suspended.
 69=User %s was suspended in the backup.  Error suspending the account:
@@ -92,3 +92,4 @@
 92=No User Data
 93=Account %s skipped due to suspension
 94=Skip Suspended
+95=FTP information invalid.

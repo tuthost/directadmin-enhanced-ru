@@ -509,3 +509,12 @@
 509=Login Keys
 510=Date Suspended
 511=Local Mail
+512=Save Limit
+513=Unable to set the E-Mail Limit
+514=E-Mail Limt has been set
+515=reseller_can_set_email_limit=0 is set, thus you cannot set a limit
+516=Set 0 for unlimited.  Set a blank value to reset to default.
+517= and %d Users
+518=Service
+519=Status
+520=Memory Usage

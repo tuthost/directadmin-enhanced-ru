@@ -118,7 +118,7 @@
 118=Morning
 119=Afternoon
 120=Evening
-121=Invalid email
+121=Invalid E-Mail
 122=Invalid domain
 123=Invalid characters in word
 124=Size is not a number
@@ -158,3 +158,11 @@
 158=Percent
 159=retry
 160=Unable to read %s.  This file is only created after a tally is run.
+161=Limit is not a number
+162=Cannot find %s.  Ensure the domain exists and is not suspended
+163=Sent
+164=%sE-Mails sent today%s
+165=Send limit must be a valid number, or blank.
+166=You cannot set an unlimited send limit.
+167=Please set a limit between 1 and %d
+168=your new send limit is: %s
