@@ -518,3 +518,7 @@
 518=Service
 519=Status
 520=Memory Usage
+521=Cannot find IP
+522=IP Link Added
+523=IP Link(s) Removed
+524=The Users display cache will be updated momentarily.

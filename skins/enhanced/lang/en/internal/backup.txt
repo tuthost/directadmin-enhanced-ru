@@ -93,3 +93,4 @@
 93=Account %s skipped due to suspension
 94=Skip Suspended
 95=FTP information invalid.
+96=Unable to restore '%s' because the Reseller or Admin '%s' cannot be found. Rename the file if needed.

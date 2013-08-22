@@ -166,3 +166,4 @@
 166=You cannot set an unlimited send limit.
 167=Please set a limit between 1 and %d
 168=your new send limit is: %s
+169=%sClean Forwarders Values%s
