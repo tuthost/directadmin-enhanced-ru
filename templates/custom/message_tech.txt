@@ -3,13 +3,12 @@
 
 |MESSAGE_SUBJECT|
 
-поступил к вам.
+поступил к вам для решения.
 Кликните по ссылке, чтобы просмотреть его:
 
 |HTTP||DOMAIN|:|PORT|/CMD_TICKET_MANAGE?action=view&number=|NUMBER|&type=ticket
 
 
-======================================================
-Автоматичеки сгенерированный email через DirectAdmin |VERSION|
+|MSG_FOOTER|
 
 Не отвечайте.

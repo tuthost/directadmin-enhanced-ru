@@ -9,7 +9,6 @@
 |HTTP||DOMAIN|:|PORT|/CMD_TICKET?action=view&number=|NUMBER|&type=ticket
 
 
-======================================================
-Автоматичеки сгенерированный email через DirectAdmin |VERSION|
+|MSG_FOOTER|
 
 Не отвечайте.

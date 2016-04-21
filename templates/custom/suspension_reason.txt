@@ -8,3 +8,4 @@ billing=id=18&text=Финансовые проблемы
 abuse=id=19&text=Жалоба
 spam=id=20&text=Спам
 other=id=21&text=Другое
+inactive=id=23&text=Не активен

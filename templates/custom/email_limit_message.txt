@@ -1,0 +1,23 @@
+|?SUBJECT=Warning: `COUNT` email было отправлено пользователем `USERNAME`|
+Пользователь |USERNAME| только что отправил |COUNT| email.
+Возможно это спамер, аккаунт мог быть взломан, или было отправлено больше email чем обычно.
+
+После проверки файла |BYTES_FILE|, было обнаружено, что больше всего отправлено с |TOP_SENDER|, на |TOP_SENDER_COUNT| email.
+|*if TOP_AUTH_PERCENT>"20"|
+Пользователь верхнего уровня |TOP_AUTH|, на |TOP_AUTH_COUNT| email.
+Этот аккаунт на |TOP_AUTH_PERCENT|% email.  Чем больше значение, тем больше вероятность что это источник email.
+Для авторизации был использованы логин и пароль которые используются в smtp через exim для доставки.|*endif|
+|*if TOP_HOST_PERCENT>"20"|
+Больше всего отправил host |TOP_HOST|, |TOP_HOST_COUNT| на email (|TOP_HOST_PERCENT|%).|*endif|
+|*if TOP_PATH_PERCENT>"20"|
+Больше всего сообщение было отправлен по пути |TOP_PATH|, на |TOP_PATH_COUNT| email (|TOP_PATH_PERCENT|%).
+Значение пути может быть использовано только если оно в домашней директории пользователя.
+Если это системный путь, то скорей всего это означает что email был отправлен скорее через smtp чем через скрипт.|*endif|
+|*if TOP_PHP_SCRIPT_PERCENT>"20"|
+Скрипт, который больше всего отправил это |TOP_PHP_SCRIPT|, на |TOP_PHP_SCRIPT_COUNT| email, (|TOP_PHP_SCRIPT_PERCENT|%).|*endif|
+|*if TOP_PHP_SCRIPT_PERCENT>DISABLE_PHP_SCRIPT_AT_LIMIT_THRESHOLD|Было отправлено много email через скрипт, пожалуйста проверьте, что он не был взломан.|*endif|
+|*if SCRIPT_CHMOD_RESULT!=""||SCRIPT_CHMOD_RESULT||*endif|
+
+Это предупреждение сгенерировано потому что лимит на отправку |LIMIT| email был превышен.
+
+|MSG_FOOTER|

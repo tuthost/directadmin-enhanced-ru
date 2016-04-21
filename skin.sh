@@ -1,32 +1,40 @@
 #!/bin/sh
 
 download=`which wget`
-pathskin=/usr/local/directadmin/data/skins
-pathtpl=/usr/local/directadmin/data/templates
+
+pathskin=/usr/local/directadmin/data/skins/enhanced
+pathtpl=/usr/local/directadmin/data/templates/custom
+pathplg=/usr/local/directadmin/plugins
 
 mkdir /tmp/enhanced
-$download --no-check-certificate https://github.com/tuthost/directadmin-enhanced-ru/tarball/master -O /tmp/enhanced.tar.gz
-tar -xzf /tmp/enhanced.tar.gz -C /tmp/enhanced
+$download --no-check-certificate https://github.com/tuthost/directadmin-enhanced-ru/tarball/master -O /tmp/enhanced/enhanced.tar.gz
+tar -xzf /tmp/enhanced/enhanced.tar.gz -C /tmp/enhanced
+
+githubkey=`ls /tmp/enhanced | grep directadmin-enhanced | awk -F- '{print $5}'`
+pathenh=/tmp/enhanced/tuthost-directadmin-enhanced-ru-$githubkey
+
+chown -R diradmin:diradmin $pathenh
 
 #####################################################
 # COPY SKIN ENHANCED
 #####################################################
 
-cd /tmp/enhanced/`ls /tmp/enhanced`/skins/enhanced
-cp -fR * $pathskin/enhanced
-chown -R diradmin:diradmin $pathskin/enhanced
+cp -fR $pathenh/skins/enhanced/* $pathskin
 
 #####################################################
 # COPY CUSTOM TPL
 #####################################################
 
-cd /tmp/enhanced/`ls /tmp/enhanced`/templates/custom
-cp -fR * $pathtpl/custom
-chown -R diradmin:diradmin $pathtpl/custom
+cp -fR $pathenh/templates/custom/* $pathtpl
+
+#####################################################
+# COPY PLUGIN LANG
+#####################################################
+
+cp -fR $pathenh/plugins/* $pathplg
 
 #####################################################
 
 rm -R /tmp/enhanced
-rm -f /tmp/enhanced.tar.gz
 
 exit 0;

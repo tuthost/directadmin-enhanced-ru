@@ -1,0 +1,52 @@
+<html>
+|?SUBJECT=Внимание: Ваш E-Mail аккаунт только что отправил `COUNT` E-Mail|
+<center><table width=600 cellspacing=20px><tr><td id=main_text><h1>
+
+|EMAIL| только что отправил |COUNT| E-Mail.</h1>
+
+Возможно это спамер, аккаунт мог быть взломан, или было отправлено больше email чем обычно.<br><br>
+
+Это предупреждение было сгенерировано потому что дневной лимит |LIMIT| E-Mail был достигнут.<br>
+Или подождите до завтра пока лимит будет сброшен, или свяжитесь с вашим администратором.<br><br>
+
+IP с которого было отправлено последний email:<br>
+|HOST|<br><br>
+
+|*if CAN_CHANGE_PASS="1"|
+Если это не ваш IP, или вы не отправляли этих emails, пожалуйста немедленно измените ваш пароль:<br>
+<a target=_blank href="|HTTP|://|DOMAIN|:|PORT|/CMD_CHANGE_EMAIL_PASSWORD">|HTTP|://|DOMAIN|:|PORT|/CMD_CHANGE_EMAIL_PASSWORD</a><br><br>
+|*endif|
+
+<span id=footer>================================<br>
+Автоматическое сообщение сгенрировано |DEAMONNAME|
+</span>
+</td></tr></table>
+</center>
+<style>
+	* { font-family: verdana; font-size: 10pt; COLOR: gray; }
+	b { font-weight: bold; }
+	table {
+		border-radius:10px;
+		box-shadow: 10px 10px 50px #000000;
+		background: #28619c;
+	}
+	#main_text {
+		background: #eef6ff;
+		text-align: left;
+		padding: 25;
+		border-radius:5px;
+		box-shadow: 2px 2px 15px #000000;
+	}
+	html {
+		background: #ffffff;
+	}
+	h1 {
+		font-size: 12pt;
+		font-wight: bold;
+		COLOR: #594842;
+	}
+	#footer {
+		COLOR: #cad4e0;
+	}
+</style>
+</html>
