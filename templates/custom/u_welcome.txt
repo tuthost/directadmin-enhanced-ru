@@ -102,5 +102,5 @@ https://my.tuthost.ua
 
 --
 Служба поддержки: support@tuthost.ua
-Финансовый отдел: support@tuthost.ua
-Центр поддержки: http://tuthost.ua
+Финансовый отдел: billing@tuthost.ua
+Личный кабинет: https://my.tuthost.ua
