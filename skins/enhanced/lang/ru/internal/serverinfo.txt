@@ -47,3 +47,5 @@
 47=Информация
 48=Указанное значение не верно. Укажите IP, или IP диапазон, домен, или wildcard домен (*.domain.com)<br><a target=_blank href='http://www.directadmin.com/features.php?id=1252'>больше информации</a>
 49=Заблокирован
+50=user_brutecount отключен
+51=Остановлено
